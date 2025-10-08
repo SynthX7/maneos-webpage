@@ -48,7 +48,7 @@ function updateFavicons() {
   const favicon = document.getElementById("favicon");
 
   if (favicon) {
-    favicon.href = `assets/favicon/${folder}/32.png`;
+    favicon.href = `assets/favicon/${folder}/32-${folder}.png`;
   }
 }
 
