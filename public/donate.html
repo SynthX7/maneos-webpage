@@ -1,47 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <!-- Favicon -->
-    <link id="favicon" rel="icon" type="image/png" sizes="32x32">
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Doe! - ManeOS</title>
-
-    <!-- Cloudflare style library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <head id="head">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   </head>
   <body>
-
     <header>
-      <a href="../index.html">
-        <img class="logo" src="assets/all-white.svg" alt="maneos-logo" />
+      <a class="logo" href="index.html">
+        <img src="assets/all-white.svg" alt="maneos-logo" />
       </a>
 
-      <nav>
-        <a>O projeto</a>
-        <a>Estudos</a>
-        <a>Comunidade</a>
-        <a class="donate-button" href="https://google.com" target="_blank">
+      <nav class="pages">
+        <a>Sobre</a>
+        <a>ManeLab</a>
+        <a>Community</a>
+      </nav>
+
+      <nav class="menu" id="menu">
+        <a>Sobre</a>
+        <a>ManeLab</a>
+        <a>Community</a>
+        <a class="donate-button2" href="donate.html">
           <i class="fas fa-heart"></i> Doar
         </a>
       </nav>
+
+      <a class="donate-button" href="donate.html">
+        <i class="fas fa-heart"></i> Doar
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </header>
 
-    <main>
-      <h2>Agradecemos sua colaboração, sua doação é responsável pelo projeto continuar de pé!</h2>
+    <main class="donate-screen">
+      <h1>
+        Agradecemos sua colaboração, <br />sua doação é responsável pelo projeto
+        continuar de pé!
+      </h1>
+      <br />
+
+      <p>Abaixo estão algumas formas de doação:</p>
+      <br /><br />
+
+      <h4>Tradicionais:</h4>
       <p>
-        Abaixo estão algumas formas de doação:
+        <img class="pix-icon" src="assets/pix-icon.png" /> Chave pix:
+        <br /><code>maneosdonations@gmail.com</code>
+        <button class="copyBtn" id="copyPix">
+          <i class="fa fa-copy"></i> Copiar
+        </button>
+        <input
+          class="copyInput"
+          type="text"
+          id="pixText"
+          value="maneosdonations@gmail.com"
+          readonly
+        />
       </p>
+      <br />
+
+      <h4>Anônimas:</h4>
+
       <p>
-        <h3>Tradicionais:</h3>
-        Chave pix: maneosdonations@gmail.com
+        <i class="fa-brands fa-bitcoin"></i> Bitcoin: <br />
+        <code>14vAAvR36AxiqjHeEAzY49bSEEaUPuuh4c</code>
+        <button class="copyBtn" id="copyBtc">
+          <i class="fa fa-copy"></i> Copiar</button
+        ><br /><br />
+        <input
+          class="copyInput"
+          type="text"
+          id="btcText"
+          value="14vAAvR36AxiqjHeEAzY49bSEEaUPuuh4c"
+          readonly
+        />
       </p>
+
       <p>
-        <h3>Anônimas:</h3>
-        Bitcoin: <code>14vAAvR36AxiqjHeEAzY49bSEEaUPuuh4c</code><br>
-        Ethereum: <code>0x85f85dad4e176d9cf495b1cd6fc6f547b2eb21a4</code>
+        <i class="fa-brands fa-ethereum"></i> Ethereum: <br />
+        <code>0x85f85dad4e176d9cf495b1cd6fc6f547b2eb21a4</code>
+        <button class="copyBtn" id="copyEth">
+          <i class="fa fa-copy"></i> Copiar
+        </button>
+        <input
+          class="copyInput"
+          type="text"
+          id="ethText"
+          value="0x85f85dad4e176d9cf495b1cd6fc6f547b2eb21a4"
+          readonly
+        />
       </p>
     </main>
 
@@ -49,6 +97,6 @@
       <p>&copy; 2025 ManeOS. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
