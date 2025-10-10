@@ -1,0 +1,18 @@
+/* ------------------------------ */
+/*            Fontes              */
+/* ------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+
+/* ------------------------------ */
+/*           Variáveis            */
+/* ------------------------------ */
+:root {
+  --white: #ffffff;
+  --dark: #111111;
+  --grey: #929292;
+  --blue: #356eea;
+  --maneos-blue: #0f3b98;
+  --gradient: linear-gradient(to right, #1a58f4ff, #3604a9ff);
+}
